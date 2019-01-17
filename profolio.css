@@ -1,35 +1,102 @@
 html {
-    scroll-behavior: smooth;
-    font-family: Nanum Gothic;
+  scroll-behavior: smooth;
+  font-family: Nanum Gothic;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Nanum Gothic;
+}
+
+
+/*class nav-start from here*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(97, 150, 248, 0.5);
+  position: relative;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 36px;
+  color: #000;
+  padding: 10px 10px 10px 50px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 26px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 18px 20px 18px 20px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav>.nav-links>a:hover {
+  background-color: rgba(97, 150, 248, 0.5);
+}
+
+.nav>#nav-check {
+  display: none;
 }
 
 
 
+
+/* original styling
 .upleft {
     text-align: left;
     position: fixed;
     font-size: 2em;
-    margin-left: 3em;
+    margin-left: 1.5em;
+    padding-top: 2%;
     z-index: 1;
+    font-weight: bold;
 }
 
 nav {
     width: 100%;
     background-color: rgba(97, 150, 248, 0.5);
     position: fixed;
-    height: 90px;
+    height: 6em;
     width: 100%;
-    z-index: 1;
+    
 }
 
 nav ul {
@@ -38,7 +105,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     font-size: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -48,128 +115,429 @@ nav a:hover {
     color: white;
     background-color: black;
 
-}
+}*/
 
 #welcome-section {
-    overflow: hidden;
-    height: 90vh;
-    background-color: rgba(76, 175, 80, 0.3);
-    z-index: 1;
+  overflow: hidden;
+  height: 90vh;
+  background-color: rgba(76, 175, 80, 0.3);
+  z-index: 1;
+  width: 100%;
 }
 
 .left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-block;
+  margin: 15%;
 }
 
 #head-img {
-    padding-top: 10vh;
-    height: 70vh;
-    padding-left: 6em;
-    mix-blend-mode: multiply;
-    /*****/
+  display: inline-block;
+  float: right;
+  padding-right: 15%;
+  height: 70vh;
+  mix-blend-mode: multiply;
+  /*****/
 }
 
 #About {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(gardenmaze.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(gardenmaze.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
 
 #About p {
-    position: relative;
-    bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: ivory;
-    font-size: 2em;
-    width: 15em;
+  position: relative;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: ivory;
+  font-size: 2em;
+  width: 15em;
 }
 
 
 #projectwrap {
-    height: 100vh;
-    padding-top: 2em;
-    text-align: center;
-    background-color: rgba(76, 175, 80, 0.3);
+
+  padding-top: 2em;
+  text-align: center;
+
 }
 
 
 .containerItem1 {
-    border: solid 1px;
-    border-radius: 10px;
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    margin: 2em;
-    /*space betwenn blocks*/
-    background-color: black;
+  border: solid 1px;
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  display: inline-block;
+  margin: 2em;
+  /*space betwenn blocks*/
+  background-color: black;
 
 
 
 }
 
 .containerItem2 {
-    border: solid 1px;
-    width: 20%;
-    height: 20%;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 2em;
-    /*space betwenn blocks*/
-    background-color: black;
+  border: solid 1px;
+  width: 20%;
+  height: 20%;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2em;
+  /*space betwenn blocks*/
+  background-color: black;
 }
 
 img.resize {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #Skill {
-    height: 60vh;
-    padding-top: 2em;
-    width: 100%;
-    text-align: center;
-
-    color: black;
+  text-align: center;
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
+  color: black;
 
 }
 
 .skillimg {
-    width: 20%;
-    height: 30%;
-    display: inline-block;
-    margin: 5em;
+  width: 15em;
+  height: 10em;
+  display: inline-block;
+  margin: 3em;
 }
 
 
 #Follow {
-    padding-top: 5%;
-    text-align: center;
-    height: 50vh;
-    background-color: rgba(76, 175, 80, 0.3);
-    padding-right: 1em;
+  padding-top: 10%;
+  text-align: center;
+  padding-right: 1em;
 }
 
 #fontawesome {
-    display: inline-block;
-    margin: 1em;
-    color: dimgray;
+  display: inline-block;
+  margin: 0.5em;
+  color: dimgray;
 }
 
 
 footer {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 10vh;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width:600px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .nav>.nav-btn>label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
     text-align: center;
-    height: 10vh;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)+.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked+.nav-links {
+    height: calc(47vh - 50px);
+    overflow-y: auto;
+  }
+
+  #welcome-section {
+    text-align: center;
+
+  }
+
+  #head-img {
+    width: 350px;
+    height: 400px;
+    padding-bottom: 20%;
+  }
+
+
+  .text-block {
+    text-align: center;
+    max-block-size: auto;
+  }
+
+  #projectwrap {
+    text-align: center;
+    position: relative;
+
+  }
+
+  #projectwrap>#projectContaniner>.containerItem1 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+
+  }
+
+  #projectContaniner2>.containerItem2 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+
+
+}
+/*********************************************************************/
+
+
+@media only screen and (max-width:320px) {
+
+  
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .nav>.nav-btn>label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)+.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked+.nav-links {
+    height: calc(52vh - 50px);
+    overflow-y: auto;
+  }
+
+  #welcome-section {
+    text-align: center;
+
+  }
+
+  #head-img {
+    width: 350px;
+    height: 400px;
+    padding-bottom: 20%;
+    padding-left: 20%;
+  }
+
+#About{
+
+  text-align: center;
+  width: 350px;
+    height: 350px;
+    object-fit: contain;
+    font-size: 10px;
+}
+  .text-block {
+    
+  block-size: 20%
+    
+    
+  }
+
+  #projectwrap {
+    text-align: center;
+    position: relative;
+
+  }
+
+  #projectwrap>#projectContaniner>.containerItem1 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+
+  }
+
+  #projectContaniner2>.containerItem2 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /*********************************************************/
+
+
+}
+
+@media only screen and (min-width:321px) and (max-width: 767px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .nav>.nav-btn>label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)+.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked+.nav-links {
+    height: calc(47vh - 50px);
+    overflow-y: auto;
+  }
+
+  #welcome-section {
+    text-align: center;
+
+  }
+
+  #head-img {
+    width: 350px;
+    height: 400px;
+    padding-bottom: 20%;
+  }
+
+
+  .text-block {
+    text-align: center;
+    max-block-size: auto;
+  }
+
+  #projectwrap {
+    text-align: center;
+    position: relative;
+
+  }
+
+  #projectwrap>#projectContaniner>.containerItem1 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+
+  }
+
+  #projectContaniner2>.containerItem2 {
+    display: grid;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+
+
 }
