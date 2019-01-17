@@ -19,7 +19,7 @@ a {
 
 body {
   margin: 0px;
-  font-family: Nanum Gothic;
+ 
 }
 
 
@@ -30,7 +30,7 @@ body {
 
 body {
   margin: 0px;
-  
+  font-family: 'segoe ui';
 }
 
 .nav {
@@ -79,44 +79,6 @@ body {
 
 
 
-/* original styling
-.upleft {
-    text-align: left;
-    position: fixed;
-    font-size: 2em;
-    margin-left: 1.5em;
-    padding-top: 2%;
-    z-index: 1;
-    font-weight: bold;
-}
-
-nav {
-    width: 100%;
-    background-color: rgba(97, 150, 248, 0.5);
-    position: fixed;
-    height: 6em;
-    width: 100%;
-    
-}
-
-nav ul {
-    text-align: right;
-    padding-top: 2%;
-}
-
-nav ul li {
-    display: inline;
-    font-size: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-nav a:hover {
-    color: white;
-    background-color: black;
-
-}*/
-
 #welcome-section {
   overflow: hidden;
   height: 90vh;
@@ -140,24 +102,28 @@ nav a:hover {
 }
 
 #About {
-  display: flex;
+  text-align: center;
+  display:block;
   align-items: center;
   justify-content: center;
-  background-image: url(gardenmaze.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #About p {
-  position: relative;
-  bottom: 20px;
+  padding-top: 5%;
   background-color: rgba(0, 0, 0, 0.5);
-  color: ivory;
-  font-size: 2em;
-  width: 15em;
+  height: 15vh;
+  
 }
 
+.about-wrapper {
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+  color: ivory; 
+}
 
 #projectwrap {
 
@@ -240,6 +206,11 @@ footer {
 
 
 @media (max-width:600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -338,7 +309,6 @@ footer {
 
 
 @media only screen and (max-width:320px) {
-
   
   .nav>.nav-btn {
     display: inline-block;
@@ -402,25 +372,25 @@ footer {
     width: 350px;
     height: 400px;
     padding-bottom: 20%;
+    padding-left: 25%;
    
   }
 
 #About{
-
   text-align: center;
-  width: 350px;
-    height: 350px;
-    object-fit: contain;
-    font-size: 10px;
+  width: 100%;
 }
-  .text-block {
-    
-  block-size: 20%
-    
-    
-  }
+.about-wrapper {
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+  color: ivory; 
+  width: 100%;
+}
 
   #projectwrap {
+    padding-top: 10%;
     text-align: center;
     position: relative;
 
@@ -521,9 +491,11 @@ footer {
       font-size: 10px;
   }
 
-  .text-block {
-    text-align: center;
-    
+  .about-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    color: ivory; 
+    width: 100%;
   }
 
   #projectwrap {
