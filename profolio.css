@@ -81,7 +81,7 @@ body {
 
 #welcome-section {
   overflow: hidden;
-  height: 90vh;
+  height: 80vh;
   background-color: rgba(76, 175, 80, 0.3);
   z-index: 1;
   width: 100%;
@@ -122,40 +122,43 @@ body {
   padding-right: 12%;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 1.2em;
-  color: ivory; 
+  color: black ; 
 }
 
 #projectwrap {
-
-  padding-top: 2em;
+color: black;
+  padding-top: 5em;
   text-align: center;
 
 }
 
 
 .containerItem1 {
-  border: solid 1px;
-  border-radius: 10px;
+  border: solid 5px;
+  border-color: rgba(76, 175, 80);
+  border-radius: 2px;
   width: 20%;
-  height: 20%;
+  height: auto;
   display: inline-block;
-  margin: 2em;
+  margin: 1.5em;
   /*space betwenn blocks*/
-  background-color: black;
+  background-color: rgba(76, 175, 80) ;
+
 
 
 
 }
 
 .containerItem2 {
-  border: solid 1px;
+  border: solid 5px;
+  border-color: rgba(76, 175, 80);
   width: 20%;
   height: 20%;
-  border-radius: 10px;
+  border-radius: 2px;
   display: inline-block;
-  margin: 2em;
+  margin: 1.5em;
   /*space betwenn blocks*/
-  background-color: black;
+  background-color: rgba(76, 175, 80);
 }
 
 img.resize {
@@ -165,7 +168,7 @@ img.resize {
 
 #Skill {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 4em;
   width: 100%;
   text-align: center;
   color: black;
@@ -205,111 +208,20 @@ footer {
 }
 
 
-@media (max-width:600px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav>.nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
 
-  .nav>.nav-btn>label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 20px 10px 20px 10px;
-  }
-
-  .nav>.nav-btn>label:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 70px;
-  }
-
-  .nav>.nav-btn>label>span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-
-  .nav>.nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0);
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 60px;
-    left: 0px;
-  }
-
-  .nav>.nav-links>a {
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
-
-  .nav>#nav-check:not(:checked)+.nav-links {
-    height: 0px;
-  }
-
-  .nav>#nav-check:checked+.nav-links {
-    height: calc(47vh - 50px);
-    overflow-y: auto;
-  }
-
-  #welcome-section {
-    text-align: center;
-
-  }
-
-  #head-img {
-    width: 350px;
-    height: 400px;
-    padding-bottom: 20%;
-  }
-
-
-  .text-block {
-    text-align: center;
-    max-block-size: auto;
-  }
-
-  #projectwrap {
-    text-align: center;
-    position: relative;
-
-  }
-
-  #projectwrap>#projectContaniner>.containerItem1 {
-    display: grid;
-    height: 50%;
-    width: 80%;
-    margin-left: 10%;
-
-  }
-
-  #projectContaniner2>.containerItem2 {
-    display: grid;
-    height: 50%;
-    width: 80%;
-    margin-left: 10%;
-  }
-
-
-
-}
 /*********************************************************************/
 
 
-@media only screen and (max-width:320px) {
-  
+@media (min-width: 320px) and (max-width: 480px)  {
+
+  html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -364,33 +276,32 @@ footer {
   }
 
   #welcome-section {
+    flex-direction: column;
     text-align: center;
+    width: 100%; 
 
   }
 
   #head-img {
-    width: 350px;
-    height: 400px;
-    padding-bottom: 20%;
-    padding-left: 25%;
-   
-  }
+    padding-bottom: 30%;
+    margin: 0 auto; }
 
 #About{
   text-align: center;
   width: 100%;
 }
+
+
 .about-wrapper {
   padding-left: 12%;
   padding-right: 12%;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.2em;
   color: ivory; 
   width: 100%;
 }
 
   #projectwrap {
-    padding-top: 10%;
+    padding-top: 20%;
     text-align: center;
     position: relative;
 
@@ -416,7 +327,7 @@ footer {
 
 }
 
-@media only screen and (min-width:321px) and (max-width: 767px) {
+@media only screen and (min-width:481px) and (max-width:767px) {
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -447,7 +358,7 @@ footer {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: rgba(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.5);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -466,34 +377,41 @@ footer {
   }
 
   .nav>#nav-check:checked+.nav-links {
-    height: calc(47vh - 50px);
+    height: calc(50vh - 50px);
     overflow-y: auto;
+    z-index: 1;
   }
 
   #welcome-section {
-    text-align: center;
-
-  }
+   display: flex;
+   width: 100%;
+   flex-wrap: none;
+}
+.left {
+  
+  display: inline;
+}
+  
 
   #head-img {
-    width: 350px;
-    height: 400px;
-    padding-bottom: 20%;
-    
+    position: relative;
+    width: 60%;
+    max-width: 100%;
+
   }
 
   #About{
 
     text-align: center;
-    width: 350px;
-      height: 350px;
+    width: 100%;
+      height: auto;
       object-fit: contain;
       font-size: 10px;
   }
 
   .about-wrapper {
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: ivory; 
     width: 100%;
   }
@@ -501,22 +419,32 @@ footer {
   #projectwrap {
     text-align: center;
     position: relative;
+    
+    max-width: 100%;
+    max-height: 100%;
 
   }
 
-  #projectwrap>#projectContaniner>.containerItem1 {
-    display: grid;
-    height: 50%;
-    width: 80%;
-    margin-left: 10%;
 
+#projectContaniner {
+  display: flex;  
+  margin: 40px auto 0 auto;
+  align-items: stretch;
+}
+
+
+
+#projectContaniner>.containerItem1 {
+  
+    
   }
 
-  #projectContaniner2>.containerItem2 {
-    display: grid;
-    height: 50%;
-    width: 80%;
-    margin-left: 10%;
+ 
+  #projectContaniner>.containerItem2 {
+  
+
+
+   
   }
 
 
