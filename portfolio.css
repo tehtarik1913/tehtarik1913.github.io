@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #F80652;
+  --primary-color: #F9D609;
   --light-color: #E8F1F8;
-  --medium-color: #ADC4D6;
-  --dark-color: #222F3F;
+  --medium-color: #F1FFFF;
+  --dark-color: #0D2611;
   --darkest-color: #00000C;
 }
 
@@ -31,6 +31,8 @@ body {
 h1 {
   color: var(--primary-color);
 }
+
+
 
 .nav {
   height: 70px;
@@ -66,6 +68,11 @@ h1 {
 .nav>.nav-links>a:hover {
   background-color: var(--darkest-color);
   color: var(--primary-color);
+}
+/*for responsive navbar*/
+
+.nav > #nav-check {
+  display: none;
 }
 
 /* WELCOME SECTION */
@@ -344,5 +351,55 @@ footer {
   .project {
     flex-basis: 48%;
     margin: 1%;
+  }
+}
+
+/*nav bar responsiveness*/
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    padding: 10px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 60px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    border-color: #F9D609;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.5s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: 40vh;
+    overflow-y: auto;
   }
 }
